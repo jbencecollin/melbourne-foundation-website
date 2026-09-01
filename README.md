@@ -17,11 +17,25 @@ Home · About · Our Scholars · Selection Process · Donate
 
 ## Running the `main` (static) site
 
-No build required — open `index.html` in a browser, or serve the folder:
+No build required — check out `main`, then open `index.html` in a browser, or
+serve the folder:
 
 ```bash
 npx serve .
 ```
+
+## Running the `enhanced-ui` (React) site
+
+```bash
+npm install
+npm run dev      # local dev server with hot reload
+npm run build    # production build into dist/
+npm run preview  # preview the production build
+```
+
+The build output in `dist/` is a static bundle that can be dropped onto any host
+(Netlify, Vercel, Cloudflare Pages, GitHub Pages). Routing uses hash URLs
+(`/#/about`), so no server rewrite rules are required.
 
 ## Notes before go-live
 
